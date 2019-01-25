@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::any('/test','IndexController@test');
 Route::any('/getUserList','IndexController@getUserList');
+Route::any('/app','IndexController@getView');

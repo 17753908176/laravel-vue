@@ -8,7 +8,8 @@
 </head>
 <body>
 <div id="app">
-        <router-view />
+    11
+        {{--<router-view />--}}
 </div>
 <script type="text/javascript" src="/js/app.js"></script>
 </body>

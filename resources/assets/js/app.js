@@ -2,7 +2,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
+import Layout from './page/Layout'
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 import store from './store/'; // vuex 数据存储所需对象
@@ -13,6 +13,9 @@ const router = new VueRouter({
 })
 
 var vm = new Vue({
+    el:"#app",
     store,
-    router
-}).$mount('#app');
+    router,
+    components:{Layout},
+    template:'<Layout />'
+});

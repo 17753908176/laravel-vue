@@ -12,11 +12,9 @@ export default{
     actions: {
         getUser({commit}) {
             api.getUser().then(function(res) {
-                console.log(res);
+                //console.log(res);
                 commit('SETUSER', res.data);
             });
         }
     }
-
-
 }

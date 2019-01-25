@@ -21,10 +21,20 @@ class IndexController extends Controller
      * @date 2019/1/23
      * @created Weitao.Ma
      */
-        public function test(){
-            return 1;
-        }
+    public function test(){
+        return 1;
+    }
+
+    /**
+     * @function getUserList
+     * @return mixed
+     * @date 2019/1/25
+     * @created Weitao.Ma
+     */
      public function getUserList(){
         return $this->objUser->getInfo();
+     }
+     public function getView(){
+         return view('welcome');
      }
 }
